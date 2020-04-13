@@ -19,7 +19,7 @@ locale                   : "ko-KR"
 title                    : "1Q1W"
 title_separator          : "-"
 subtitle                 : # site tagline that appears below site title in masthead
-name                     : "easily.."
+name                     : "1Q1W"
 description              : "develop study"
 url                      : "1q1w.github.io"
 baseurl                  : # the subpath of your site, e.g. "/blog"
@@ -93,7 +93,7 @@ analytics:
 
 # Site Author
 author:
-  name             : "JINO"
+  name             : # "JINO"
   avatar           : # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
   bio              : "so hard.."
   location         : "Seoul Korea"
@@ -101,7 +101,7 @@ author:
   links:
     - label: "Email"
       icon: "fas fa-fw fa-envelope-square"
-      url: "jino8722@naver.com"
+      # url: "jino8722@naver.com"
     - label: "Website"
       icon: "fas fa-fw fa-link"
       # url: "https://your-website.com"
