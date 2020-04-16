@@ -95,7 +95,7 @@ analytics:
 author:
   name             : # "JINO"
   avatar           : # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
-  bio              : "so hard.."
+  bio              : "so hard"
   location         : "Seoul Korea"
   email            : "jino8722@naver.com"
   links:
