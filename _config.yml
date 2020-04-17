@@ -12,18 +12,18 @@
 
 # theme                  : "minimal-mistakes-jekyll"
 # remote_theme           : "mmistakes/minimal-mistakes"
-minimal_mistakes_skin    : "default" # "air", "aqua", "contrast", "dark", "dirt", "neon", "mint", "plum", "sunrise"
+minimal_mistakes_skin    : "dirt" # "air", "aqua", "contrast", "dark", "dirt", "neon", "mint", "plum", "sunrise"  # 테마 스킨
 
 # Site Settings
-locale                   : "en-US"
-title                    : "Site Title"
+locale                   : "ko"   # 타깃 국가
+title                    : "1q1w"   # 블로그 좌측 상단 타이틀
 title_separator          : "-"
 subtitle                 : # site tagline that appears below site title in masthead
 name                     : "Your Name"
 description              : "An amazing website."
-url                      : # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
+url                      : "https://https://1q1w.github.io"   # URL
 baseurl                  : # the subpath of your site, e.g. "/blog"
-repository               : # GitHub username/repo-name e.g. "mmistakes/minimal-mistakes"
+repository               : "1q1w/1q1w.github.io"   # github 리포지토리
 teaser                   : # path of fallback teaser image, e.g. "/assets/images/500x300.png"
 logo                     : # path of logo image to display in the masthead, e.g. "/assets/images/88x88.png"
 masthead_title           : # overrides the website title displayed in the masthead, use " " for no title
@@ -51,8 +51,8 @@ reCaptcha:
   secret                 :
 atom_feed:
   path                   : # blank (default) uses feed.xml
-search                   : # true, false (default)
-search_full_content      : # true, false (default)
+search                   : true   # 사이트 우측 상단 검색 활성화
+search_full_content      : true   # 제목 아닌 내용까지도 검색할것인지
 search_provider          : # lunr (default), algolia, google
 algolia:
   application_id         : # YOUR_APPLICATION_ID
@@ -91,11 +91,11 @@ analytics:
     anonymize_ip         : # true, false (default)
 
 
-# Site Author
+# Site Author (좌측 사이드바 운영자정보)
 author:
-  name             : "Your Name"
-  avatar           : # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
-  bio              : "I am an **amazing** person."
+  name             : "helper"  # 이름
+  avatar           : # path of avatar image, e.g. "/assets/images/bio-photo.jpg"  # 프로필사진
+  bio              : "I will help me"
   location         : "Somewhere"
   email            :
   links:
@@ -275,7 +275,7 @@ defaults:
     values:
       layout: single
       author_profile: true
-      read_time: true
+      read_time: true  # 해당 포스트를 읽은 시간. 기본값 true
       comments: # true
-      share: true
+      share: true  # 포스트공유 기능 활성화여부. 기본값 true
       related: true
