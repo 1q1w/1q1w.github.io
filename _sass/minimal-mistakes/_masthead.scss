@@ -15,11 +15,15 @@
     @include clearfix;
     margin-left: auto;
     margin-right: auto;
-    padding: 1em;
+    /* 메뉴바 패딩 조정 */
+    /* padding: 1em; */
+    padding: 0.4em;
     max-width: 100%;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    /* devinlife : 메뉴바 텍스트 설정 */
+    font-size: $type-size-4;
     -webkit-box-pack: justify;
     -ms-flex-pack: justify;
     justify-content: space-between;
