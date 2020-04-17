@@ -1,7 +1,15 @@
 # main links
+# 해당 파일에서 상단 네비게이션 설정
 main:
-  - title: "Quick-Start Guide"
-    url: https://mmistakes.github.io/minimal-mistakes/docs/quick-start-guide/
+  - title: "Archive"
+    url: /year-archive/
+  - title: "tag"
+    url: /tags/
+  - title: "Category"
+    url: /categories/
+
+  # - title: "Quick-Start Guide"
+  #   url: https://mmistakes.github.io/minimal-mistakes/docs/quick-start-guide/
   # - title: "About"
   #   url: https://mmistakes.github.io/minimal-mistakes/about/
   # - title: "Sample Posts"
