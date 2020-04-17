@@ -96,7 +96,7 @@ author:
   name             : "helper"  # 이름
   avatar           : # path of avatar image, e.g. "/assets/images/bio-photo.jpg"  # 프로필사진
   bio              : "I will help me"
-  location         : "Somewhere"
+  location         : # "Somewhere"
   email            :
   links:
     - label: "Email"
