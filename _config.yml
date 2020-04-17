@@ -12,14 +12,14 @@
 
 # theme                  : "minimal-mistakes-jekyll"
 # remote_theme           : "mmistakes/minimal-mistakes"
-minimal_mistakes_skin    : "dirt" # "air", "aqua", "contrast", "dark", "dirt", "neon", "mint", "plum", "sunrise"  # 테마 스킨
+minimal_mistakes_skin    : "dark" # "air", "aqua", "contrast", "dark", "dirt", "neon", "mint", "plum", "sunrise"  # 테마 스킨
 
 # Site Settings
 locale                   : "ko"   # 타깃 국가
 title                    : "1q1w"   # 블로그 좌측 상단 타이틀
 title_separator          : "-"
 subtitle                 : # site tagline that appears below site title in masthead
-name                     : "Your Name"
+name                     : "1q1w"
 description              : "An amazing website."
 url                      : "https://https://1q1w.github.io"   # URL
 baseurl                  : # the subpath of your site, e.g. "/blog"
@@ -96,7 +96,7 @@ author:
   name             : "helper"  # 이름
   avatar           : # path of avatar image, e.g. "/assets/images/bio-photo.jpg"  # 프로필사진
   bio              : "I will help me"
-  location         : "Somewhere"
+  location         : # "Somewhere"
   email            :
   links:
     - label: "Email"
