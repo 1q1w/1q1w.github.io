@@ -19,7 +19,7 @@ locale                   : "ko"   # 타깃 국가
 title                    : "1q1w"   # 블로그 좌측 상단 타이틀
 title_separator          : "-"
 subtitle                 : # site tagline that appears below site title in masthead
-name                     : "Your Name"
+name                     : "1q1w"
 description              : "An amazing website."
 url                      : "https://https://1q1w.github.io"   # URL
 baseurl                  : # the subpath of your site, e.g. "/blog"
@@ -50,7 +50,7 @@ reCaptcha:
   siteKey                :
   secret                 :
 atom_feed:
-  path                   : # blank (default) uses feed.xml
+  path                   : blank # blank (default) uses feed.xml
 search                   : true   # 사이트 우측 상단 검색 활성화
 search_full_content      : true   # 제목 아닌 내용까지도 검색할것인지
 search_provider          : # lunr (default), algolia, google
