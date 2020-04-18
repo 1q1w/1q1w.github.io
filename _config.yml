@@ -93,9 +93,9 @@ analytics:
 
 # Site Author (좌측 사이드바 운영자정보)
 author:
-  name             : "helper"  # 이름
-  avatar           : # path of avatar image, e.g. "/assets/images/bio-photo.jpg"  # 프로필사진
-  bio              : "I will help me"
+  name             : "bonobono"  # 이름
+  avatar           : "/assets/images/bio-photo.jpg"  # 프로필사진
+  bio              : "기본이 제일 어렵고 기본이 제일 중요하다"
   location         : # "Somewhere"
   email            :
   links:
