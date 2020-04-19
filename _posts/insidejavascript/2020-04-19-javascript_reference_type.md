@@ -200,11 +200,11 @@ console.log(latte.price);  // 5000 출력
 console.log(americano.price);  // 5000 출력
 ```
 
-latte 변수는 객체 자체를 저장하고 있는것이 아닌 생성된 객체를 가리키는 참조값을 저장한다.
+1) latte 변수는 객체 자체를 저장하고 있는것이 아닌 생성된 객체를 가리키는 참조값을 저장한다.
 
-americano에 latte 변수를 할당했을 때 americano에는 latte에 저장된 객체의 참조값이 저장된다.
+2) americano에 latte 변수를 할당했을 때 americano에는 latte에 저장된 객체의 참조값이 저장된다.
 
-즉, 두 개의 변수가 같은 객체를 바라보고 있어 위와 같은 출력값이 나타나게 된다.
+3) 즉, 두 개의 변수가 같은 객체를 바라보고 있어 위와 같은 출력값이 나타나게 된다.
 
  
 
@@ -298,17 +298,9 @@ console.log(b.value);
 200
 ```
 
-1) 함수 호출시 기본 타입 변수를 넘기는 경우, 호출된 함수의 매개변수로 **복사된 값**이 전달된다.
+1) 함수 호출시 기본 타입 변수를 넘기는 경우, 호출된 함수의 매개변수로 **복사된 값**이 전달된다.  변수 a를 넘기는 경우 a가 그대로 넘어가는것이 아니라 a에 저장된 값이 복사되어 함수에 전달된다.  이를 **값에 의한 호출 (Call By Value)**라 한다.
 
-변수 a를 넘기는 경우 a가 그대로 넘어가는것이 아니라 a에 저장된 값이 복사되어 함수에 전달된다.
-
-이를 **값에 의한 호출 (Call By Value)**라 한다.
-
-2) 함수 호출시 참조 탕비 변수를 넘기는 경우, 호출된 함수의 매개변수로 **복사된 참조값**이 전달된다.
-
-변수 b를 넘기는 경우 해당 변수의 참조값이 전달되면서 b.value를 변경하는 경우 참조값이 직접 변경된다.
-
-이를 **참조에 의한 호출(Call By Reference)**라 한다.
+2) 함수 호출시 참조 타입 변수를 넘기는 경우, 호출된 함수의 매개변수로 **복사된 참조값**이 전달된다.  변수 b를 넘기는 경우 해당 변수의 참조값이 전달되면서 b.value를 변경하는 경우 참조값이 직접 변경된다.  이를 **참조에 의한 호출(Call By Reference)**라 한다.
 
 
 
@@ -334,14 +326,116 @@ console.dir(coffee);
 
 
 
+크롬 브라우저에서 이를 실행하면 아래와 같이 proto 프로퍼티를 볼 수 있다.
+
 ![Alt text](/assets/images/prototype.jpg "prototype")
 
 
-크롬 브라우저에서 이를 실행하면 proto 프로퍼티를 볼 수 있다.
 
-이 프로퍼티가 coffee 객체의 부모인 프로토타입 객체를 가리킨다.
+proto 프로퍼티는 coffee 객체의 부모인 프로토타입 객체를 가리킨다.  coffee 객체의 프로토타입은 Object.Prototype()이며 여기에 포함된 다양한 내장 메서드를 자신의 것처럼 상속받아 사용할 수 있게 된다.
 
-**객체 리터럴 방식으로 생성된 객체는 Object.prototype 객체가 프로토타입 객체**가 된다는것을 기억하자.
+**모든 객체는 자신의 프로토타입을 가리키는 Prototype라는 숨겨진 프로퍼티를 가지고, 객체 리터럴 방식으로 생성된 객체는 Object.prototype 객체가 프로토타입 객체**가 된다는것을 기억하자.
+
+프로토타입 객체는 임의의 다른 객체로 변경하는것도 가능하다.  프로토타입에 대해서는 추후 프로토타입 체이닝에서 더 자세히 살펴보도록 하자.
+
+
+
+
+
+***
+
+### 배열
+
+- 배열은 대괄호를 사용하여 표기
+- 객체에서는 프로퍼티명으로 접근했지만, 배열은 인덱스를 통해 배열의 요소에 접근 가능.
+- 인덱스는 0부터 시작
+
+```javascript
+var coffeeType = ["latte", "americano"];
+console.log(coffeeType[0]);  // latte 출력
+console.log(coffeeType[1]);  // americano 출력
+```
+
+
+
+배열은 값을 순차적으로 넣을 필요 없이 아무 인덱스에나 값을 넣을 수 있다.
+
+```javascript
+var coffeeType = [];
+
+coffeeType[2] = 'latte';
+coffeeType[5] = 'americano';
+
+console.log(coffeeType);  // emptyx2, latte, emptyx2, americano 출력
+console.log(coffeeType.length);  // 6 출력. 가장 큰 인덱스가 5이므로 배열의 크기가 6이 되었음.
+```
+
+1) 자바스크립트 배열의 크기는 현재 가장 큰 인덱스를 기준으로 정해진다.
+
+2) 모든 배열은 length 프로퍼티가 있으며 이는 배열의 원소 개수를 나타낸다. 
+
+
+
+#### 배열의 length
+
+1) length 프로퍼티는 배열 내 가장 큰 인덱스에 1을 더한 값이다.
+
+2) 실제 메모리는 length 크기처럼 할당되지는 않는다.
+
+3) 명시적으로 length의 값을 변경할 수 있다.
+
+```javascript
+var num = [0, 1];
+
+num.length = 5;  // 배열의 길이 5로 변경
+```
+
+
+
+
+
+#### 배열도 객체
+
+배열도 객체지만 일반 객체와는 차이가 있다.
+
+```javascript
+var testArray = [1, 2, 3];
+var testObj = {
+    '0' : 1,
+    '1' : 2,
+    '2' : 3
+};
+
+console.log(typeof testArray);  // object 출력
+console.log(typeof testObj);  // object 출력
+
+console.log(testArray.length);  // 3 출력
+console.log(testObj.length);  // undefined 출력
+```
+
+  위 예제에서 testArray와 testObj 객체는 유사해보인다.  하지만 length 프로퍼티는 배열인 testArray 객체에만 존재한다.  따라서 testObj.length 는 undefined 가 출력된다.
+
+
+
+정리하자면, **객체 리터럴 방식으로 생성한 객체는 Object.prototype 객체가 프로토타입이며, 배열은 Array.prototype 객체가 프로토타입**이 된다.  Array.prototype 객체는 push(), pop() 같이 배열에서 사용할 수 있는 표준메서드를 내장하고 있으며 **Array.prototype 객체의 프로토타입은 Object.prototype 객체**이다.
+
+```javascript
+var emptyArray = [];
+var emptyObj = {};
+
+console.dir(emptyArray);  // Array.prototype 출력
+console.dir(emptyObj);  // Object.prototype 출력
+```
+
+
+
+
+
+
+
+
+
+
 
 
 
