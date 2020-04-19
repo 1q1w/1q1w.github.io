@@ -1,6 +1,6 @@
 ---
 layout: single
-title: "자바스크립트 데이터 타입"
+title: "자바스크립트 기본 데이터 타입"
 categories:
   - javascript
 toc: true
@@ -38,7 +38,7 @@ date: 2020-04-18
 
 본 게시글에서는 그 중에서도 기본 타입에 대해 다뤄보자.
 
-[참조타입에 대해 살펴보기](/_post/2020-04-18-자바스크립트의 데이터 타입 (참조 타입).md)
+[참조타입에 대해 살펴보기](/_post/javascript/2020-04-19-javascript_reference_type.md)
 
 
 
