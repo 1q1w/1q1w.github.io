@@ -334,7 +334,7 @@ console.dir(coffee);
 
 
 
-<img src="/assets/images/prototype.jpg" width="40%" height="40%" title="prototype" alt="prototype"></img>
+![Alt text](/assets/images/prototype.jpg "prototype")
 
 
 크롬 브라우저에서 이를 실행하면 proto 프로퍼티를 볼 수 있다.
