@@ -1,7 +1,7 @@
 ---
 title: "1q1w 설명서"
 permalink: /about/
-layout: single
+layout: active
 ---
 
 
