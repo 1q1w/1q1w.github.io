@@ -1,12 +1,8 @@
 ---
-title: "1q1w 설명서"
+title: "1q1w 블로그에서는"
 permalink: /about/
 layout: active
 ---
-
-
-
-## 1q1w.github.io 블로그
 
 
 
