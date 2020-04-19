@@ -176,6 +176,8 @@ console.log(coffee.size);  // small 출력
 
 ***
 
+   
+
 ### 참조 타입의 특성
 
 #### 1.  참조값 복사 (얕은복사)
@@ -266,17 +268,80 @@ console.log(americano == testCopy);  // true 출력
 
 
 
+#### 3. 값에 의한 호출 (Call By Value) / 참조에 의한 호출 (Call By Reference)
+
+```javascript
+var a = 1;
+var b = {value : 2};
+
+function ChangeValue (a, b){
+    a = 100;  // 값이 복사된 상태
+    b.value = 200;  // 참조값이 복사된 상태
+    
+    console.log(a);  
+    console.log(b.value);  
+}
+
+ChangeValue(a, b);
+console.log(a);
+console.log(b.value);
+```
+
+
+
+위 예제의 결과는 다음과 같다
+
+```javascript
+100
+200
+1
+200
+```
+
+1) 함수 호출시 기본 타입 변수를 넘기는 경우, 호출된 함수의 매개변수로 **복사된 값**이 전달된다.
+
+변수 a를 넘기는 경우 a가 그대로 넘어가는것이 아니라 a에 저장된 값이 복사되어 함수에 전달된다.
+
+이를 **값에 의한 호출 (Call By Value)**라 한다.
+
+2) 함수 호출시 참조 탕비 변수를 넘기는 경우, 호출된 함수의 매개변수로 **복사된 참조값**이 전달된다.
+
+변수 b를 넘기는 경우 해당 변수의 참조값이 전달되면서 b.value를 변경하는 경우 참조값이 직접 변경된다.
+
+이를 **참조에 의한 호출(Call By Reference)**라 한다.
 
 
 
 
 
+***
+
+#### 프로토타입
+
+모든 객체는 부모 역할을 하는 객체와 연결되어있는데 이 때 부모 객체를 **프로토타입**이라 부른다.
 
 
 
+아래 예제를 직접 실행시켜보자.
+
+```javascript
+var coffee={
+    price:4000
+};
+
+console.dir(coffee);
+```
 
 
 
+<img src="/assets/images/prototype.jpg" width="40%" height="40%" title="prototype" alt="prototype"></img>
+
+
+크롬 브라우저에서 이를 실행하면 proto 프로퍼티를 볼 수 있다.
+
+이 프로퍼티가 coffee 객체의 부모인 프로토타입 객체를 가리킨다.
+
+**객체 리터럴 방식으로 생성된 객체는 Object.prototype 객체가 프로토타입 객체**가 된다는것을 기억하자.
 
 
 
