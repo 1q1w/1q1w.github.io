@@ -147,21 +147,21 @@ for(var key in coffee){
 // price 3500
 ```
 
+ 
 
-
-
+ 
 
 #### 4. 객체 프로퍼티 삭제
 
 **delete 연산자를 사용해 객체의 프로퍼티를 삭제**할 수 있다.  하지만 **객체 자체는 삭제 할 수 없다**.
 
-
+ 
 
 ```javascript
 var coffee = {
     type: 'latte',
     size: 'small'
-}
+};
 
 delete coffee.type;  // type 프로퍼티 삭제 시도
 console.log(coffee.type);  // undefined 출력
@@ -170,11 +170,113 @@ delete coffee;  // coffee 객체 삭제 시도
 console.log(coffee.size);  // small 출력
 ```
 
+ 
 
-
-
+ 
 
 ***
 
 ### 참조 타입의 특성
+
+#### 1.  참조값 복사 (얕은복사)
+
+아래 예제를 우선 살펴보자.
+
+
+
+```javascript
+var latte ={
+    price: 4000
+};
+var americano = latte;
+
+console.log(latte.price);  // 4000 출력
+console.log(americano.price);  // 4000 출력
+
+americano.price = 5000;
+console.log(latte.price);  // 5000 출력
+console.log(americano.price);  // 5000 출력
+```
+
+latte 변수는 객체 자체를 저장하고 있는것이 아닌 생성된 객체를 가리키는 참조값을 저장한다.
+
+americano에 latte 변수를 할당했을 때 americano에는 latte에 저장된 객체의 참조값이 저장된다.
+
+즉, 두 개의 변수가 같은 객체를 바라보고 있어 위와 같은 출력값이 나타나게 된다.
+
+ 
+
+위와 같이 참조값 복사가 아닌 실제 데이터를 복사하고 싶을 경우 어떻게 하면 될까?
+
+방법은 여러가지가 있겠지만 아래 예시를 보자.
+
+```javascript
+var latte ={
+    price: 4000
+};
+var americano = JSON.parse(JSON.stringify(latte));
+americano.price = 5000;
+
+console.log(latte.price);  //4000 출력
+console.log(americano.price);  //5000 출력
+```
+
+1) JSON.stringify() 메서드로 객체의 데이터를 JSON 형태의 문자열로 복사한 뒤,
+
+2) JSON.parse() 메서드로 다시 객체로 만드는 방법이다.
+
+
+
+깊은복사를 하는 방법은 여러가지가 있겠지만 객체는 참조값이 복사된다는 특성을 기억하면서 일단 넘어가도록 하자.
+
+
+
+
+
+#### 2. 객체 비교
+
+동등 연산자를 사용하여 **객체를 비교하는 경우에도 참조값을 비교**한다.
+
+아래 예제를 살펴보자.
+
+
+
+```javascript
+// 기본 타입 변수
+var lattePrice = 4000;
+var americanoPrice = 4000;
+
+// 참조 타입 변수
+var latte = { price:4000 };
+var americano = { price:4000 };
+var testCopy = americano;
+
+console.log(lattePrice == americanoPrice);  // true 출력
+console.log(latte == americano);  // false 출력
+console.log(americano == testCopy);  // true 출력
+```
+
+1) lattePrice와 americanoPrice는 기본 타입이므로 값을 직접 비교한다.
+
+2) latte와 americano는 참조 타입이므로 참조값을 비교한다. 참조값이 다르므로 비교결과는 false이다.
+
+3) americano와 testCopy는 참조값이 일치하므로 비교결과 true이다.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
