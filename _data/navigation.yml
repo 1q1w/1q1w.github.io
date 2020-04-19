@@ -1,8 +1,8 @@
 # main links
 # 해당 파일에서 상단 네비게이션 설정
 main:
-  - title: "Archive"
-    url: /year-archive/
+  - title: "About"
+    url: /about/
   - title: "tag"
     url: /tags/
   - title: "Category"
