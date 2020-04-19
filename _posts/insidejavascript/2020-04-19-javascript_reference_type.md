@@ -431,10 +431,130 @@ console.dir(emptyObj);  // Object.prototype 출력
 
 
 
+#### 배열의 프로퍼티 생성
+
+배열도 객체이므로 인덱스가 숫자인 배열의 원소 외에도 일반 객체처럼 동적으로 프로퍼티 생성이 가능하다.  단 프로퍼티를 추가해도 length는 변하지 않는데 length는 배열 원소의 가장 큰 인덱스가 변했을 경우에만 변경된다.
+
+```javascript
+var arr = [0, 1];
+arr.name = 'Test';
+
+console.log(arr.length);  // 2 출력
+```
 
 
 
 
+
+#### 배열의 프로퍼티 열거
+
+배열도 객체이므로 for in 문을 이용해 열거가 가능하다.  하지만 이 경우 배열의 요소 외 다른 프로퍼티들까지 열거될 수 있어 배열의 요소들만 출력하려면 for 문을 사용하는 것이 좋다.
+
+```javascript
+var tempArr = [0, 1, 2];
+tempArr.name = 'temp';
+
+for (var temp in tempArr){
+    console.log(temp, tempArr[temp]);
+}  // for in 문을 사용하는 경우 name 프로퍼티까지 출력
+
+for(var i = 0; i < tempArr.length; i++){
+    console.log(i, tempArr[i]);
+}  // 인덱스를 이용해 배열의 요소만 출력
+```
+
+
+
+
+
+#### 배열의 요소 삭제
+
+배열도 객체이므로 delete를 사용해 요소를 제거할 수 있다.  하지만 이 경우 배열의 length 값은 변하지 않는 문제가 있다.  따라서 배열의 요소를 삭제할때는 splice() 배열 메서드를 사용하도록 하자.
+
+* splice(start, deleteCount, item...)
+
+```javascript
+var arr = [0, 1, 2, 3, 4, 5];
+
+arr.splice(2, 1);  // 2번째 요소에서 1개를 삭제
+console.log(arr);  // 0, 1, 3, 4, 5 출력
+console.log(arr.length);  // 5 출력
+```
+
+
+
+
+
+#### Array() 생성자 함수
+
+배열 리터럴로 배열을 생성하는 과정은 Array() 생성자 함수로 배열을 생성하는 방식을 단순화 한 것이다.
+
+- 인자가 1개이고, 숫자인 경우 해당 인자를 length로 갖는 빈 배열 생성
+- 인자가 n개인 경우 해당 인자를 요소로 갖는 배열 생성
+
+```javascript
+var arr = new Array(5);
+console.log(arr);  // emptyx5 출력
+console.log(arr.length); // 5 출력
+```
+
+
+
+
+
+#### 유사 배열 객체
+
+배열에 있는 length 프로퍼티를 일반 객체에서도 가지고 있다면 어떻게 될까?  **자바스크립트에서는 length 프로퍼티를 가진 객체를 유사 배열 객체** 라고 부른다.
+
+추후 살펴볼 apply() 메서드를 사용하면 유사 배열 객체지만 배열의 메서드를 사용하는것이 가능하다.  유사 배열 객체도 배열의 메서드를 사용하는것이 가능하다 정도로 이해하고 아래의 예제를 살펴보고 넘어가도록 하자.
+
+```javascript
+var arr = [0, 1, 2];
+var obj = {name:'number'};
+
+arr.push(3);
+//obj.push(3);  // error 발생
+
+Array.prototype.push.apply(obj, ['3']);
+console.log(obj);  // 0: '3', name: 'number', length: 1  출력
+```
+
+
+
+
+
+#### 연산자
+
+- 더하기 (+) 연산자
+
+  두 요소가 숫자일 경우 더하기 연산이 이뤄지고, 그 외의 경우 문자열 연결 연산이 이뤄진다.
+
+- typeof() 연산자
+
+  피연산자의 타입을 문자열 형태로 리턴한다.
+
+  null과 배열은 object, 함수는 function 이라는 점만 유의하자.
+
+- == 연산자와 === 연산자
+
+  == 연산자는 타입이 다를 경우 타입변환 후 데이터를 비교한다
+
+  === 연산자는 타입이 다를 경우 그냥 비교한다.
+
+```javascript
+// == 와 === 의 차이
+var a = 1;
+var b = '1';
+
+console.log(a == b);  // 타입 변환 후 true 출력
+console.log(a === b);  // false 출력
+```
+
+- !! 연산자
+
+  피연산자를 bollean 값으로 변환하는 역할을 한다
+
+  숫자 0, 공백, false, null, undefined 등은 false로 반환되고 그 외 값이 있는 것들은 true로 반환된다.  하지만 객체는 빈 객체라도 true로 반환됨을 유의하자.  (빈 배열도 객체이므로 빈 배열도 true로 반환된다.)
 
 
 
