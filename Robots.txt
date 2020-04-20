@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: http://1q1w.github.io/sitemap.xml
