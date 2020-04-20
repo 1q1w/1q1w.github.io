@@ -21,7 +21,7 @@ title_separator          : "-"
 subtitle                 : # site tagline that appears below site title in masthead
 name                     : "1q1w"
 description              : "An amazing website."
-url                      : "https://https://1q1w.github.io"   # URL
+url                      : "https://1q1w.github.io"   # URL
 baseurl                  : # the subpath of your site, e.g. "/blog"
 repository               : "1q1w/1q1w.github.io"   # github 리포지토리
 teaser                   : # path of fallback teaser image, e.g. "/assets/images/500x300.png"
