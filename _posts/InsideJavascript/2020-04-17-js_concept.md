@@ -1,6 +1,6 @@
 ---
 layout: single
-title: "자바스크립트의 핵심개념"
+title: "[자바스크립트] 핵심개념"
 categories:
   - javascript
 toc: true

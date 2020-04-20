@@ -1,6 +1,6 @@
 ---
 layout: single
-title: "자바스크립트 기본 데이터 타입"
+title: "[자바스크립트] 기본 데이터 타입"
 categories:
   - javascript
 toc: true

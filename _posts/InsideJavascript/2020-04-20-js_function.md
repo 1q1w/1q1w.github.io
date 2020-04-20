@@ -1,6 +1,6 @@
 ---
 layout: single
-title: "자바스크립트의 함수"
+title: "[자바스크립트] 함수 기초"
 categories:
   - javascript
 toc: true

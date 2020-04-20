@@ -1,6 +1,6 @@
 ---
 layout: single
-title: "자바스크립트 참조 데이터 타입 (객체)"
+title: "[자바스크립트] 참조 데이터 타입 (객체)"
 categories:
   - javascript
 toc: true
