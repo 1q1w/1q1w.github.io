@@ -1,6 +1,6 @@
 ---
 layout: single
-title: "[자바스크립트] 함수 호출과 arguments, this"
+title: "[자바스크립트] 함수 호출과 arguments, this 바인딩"
 categories:
   - javascript
 tag:
@@ -14,7 +14,7 @@ date: 2020-04-22
 
 
 
-이번 시간에는 함수 호출과 arguments, this에 대해 알아보자.
+이번 시간에는 함수 호출과 arguments, this 바인딩에 대해 알아보자.
 
 
 
