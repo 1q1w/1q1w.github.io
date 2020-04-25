@@ -3,8 +3,8 @@
 main:
   #- title: "About"
   #  url: /about/
-  - title: "tag"
-    url: /tags/
+  #- title: "tag"
+  #  url: /tags/
   - title: "Category"
     url: /categories/
 
