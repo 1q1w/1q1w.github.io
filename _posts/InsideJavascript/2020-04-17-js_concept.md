@@ -7,8 +7,9 @@ toc: true
 toc_sticky: true
 toc_label: "On this Page"
 date: 2020-04-17
-priority : 1.0
 ---
+
+
 
 자바스크립트 핵심 개념을 정리해보자.
 
