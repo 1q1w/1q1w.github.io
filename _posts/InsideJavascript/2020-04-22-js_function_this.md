@@ -6,6 +6,8 @@ categories:
 tag:
   - arguments
   - this
+  - 바인딩
+  - return
 toc: true
 toc_sticky: true
 toc_label: "On this Page"
