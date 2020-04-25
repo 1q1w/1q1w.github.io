@@ -207,7 +207,7 @@ sass:
 
 # Outputting
 permalink: /:categories/:title/
-paginate: 6 # 첫 페이지에 보여줄 게시글
+paginate: 100 # 첫 페이지에 보여줄 게시글
 paginate_path: /page:num/
 timezone: Asia/Seoul # https://en.wikipedia.org/wiki/List_of_tz_database_time_zones
 
