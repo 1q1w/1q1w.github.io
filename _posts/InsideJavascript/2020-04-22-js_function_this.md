@@ -3,11 +3,6 @@ layout: single
 title: "[자바스크립트] 함수 호출과 arguments, this 바인딩"
 categories:
   - javascript
-tag:
-  - arguments
-  - this
-  - 바인딩
-  - return
 toc: true
 toc_sticky: true
 toc_label: "On this Page"

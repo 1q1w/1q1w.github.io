@@ -3,14 +3,6 @@ layout: single
 title: "[자바스크립트] 함수 기초"
 categories:
   - javascript
-tag:
-  - function
-  - 자바스크립트 함수
-  - 호이스팅
-  - 프로토타입
-  - 콜백함수
-  - 즉시실행함수
-  - 내부함수
 toc: true
 toc_sticky: true
 toc_label: "On this Page"
