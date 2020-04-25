@@ -55,7 +55,7 @@ test(1, 2, 3);  // 3 출력
 
 결과는 아래와 같다.
 
-![Alt text](/asset/images/js_5_arguments.jpg "function_arguments")
+![Alt text](/assets/images/js_5_arguments.jpg "function_arguments")
 
 
 
