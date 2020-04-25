@@ -6,7 +6,7 @@ categories:
 toc: true
 toc_sticky: true
 toc_label: "On this Page"
-date:2020-04-24
+date: 2020-04-25
 ---
 
 
@@ -279,22 +279,3 @@ console.log(Animal.prototype.color);  // blue 출력
 1) bonobono 객체와 porori 객체의 color을 출력하려 할 때는 해당 객체들에 color 프로퍼티가 없으므로 프로토타입 체이닝이 이뤄져 Animal.protytpe.color 이 출력된다.
 
 2) porori 객체에 color 프로퍼티를 동적으로 할당한 뒤, porori.color을 출력하면 porori 객체에 color 프로퍼티가 있으므로 프로토타입 체이닝이 일어나지 않고 porori.color을 출력한다.
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
