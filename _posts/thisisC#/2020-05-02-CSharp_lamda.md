@@ -2,7 +2,7 @@
 layout: single
 title: "[C#] 람다식과 Func, Action 그리고 식 트리"
 categories:
-  - C#
+  - CSharp
 toc: true
 toc_sticky: true
 toc_label: "On this Page"

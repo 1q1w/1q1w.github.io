@@ -2,7 +2,7 @@
 layout: single
 title: "[C#] 대리자와 이벤트"
 categories:
-  - C#
+  - CSharp
 toc: true
 toc_sticky: true
 toc_label: "On this Page"
