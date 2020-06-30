@@ -1,6 +1,6 @@
 ---
 layout: single
-title: "[NETWORK] HTTP 인증 방식"
+title: "[HTTP&NETWORK] HTTP 인증 방식"
 categories:
   - HTTP&NETWORK
 toc: true

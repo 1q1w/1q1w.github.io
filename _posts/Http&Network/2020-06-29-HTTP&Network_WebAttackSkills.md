@@ -1,6 +1,6 @@
 ---
 layout: single
-title: "[NETWORK] 웹 공격 기술"
+title: "[HTTP&NETWORK] 웹 공격 기술"
 categories:
   - HTTP&NETWORK
 toc: true

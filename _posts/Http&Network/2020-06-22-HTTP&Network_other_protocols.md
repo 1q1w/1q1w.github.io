@@ -1,6 +1,6 @@
 ---
 layout: single
-title: "[NETWORK] HTTP기반의 프로토콜"
+title: "[HTTP&NETWORK] HTTP기반의 프로토콜"
 categories:
   - HTTP&NETWORK
 toc: true

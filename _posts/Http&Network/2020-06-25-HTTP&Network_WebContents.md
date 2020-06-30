@@ -1,6 +1,6 @@
 ---
 layout: single
-title: "[NETWORK] 웹 콘텐츠에서 사용되는 기술"
+title: "[HTTP&NETWORK] 웹 콘텐츠에서 사용되는 기술"
 categories:
   - HTTP&NETWORK
 toc: true
