@@ -2,11 +2,11 @@
 layout: single
 title: "[C#] 람다식과 Func, Action 그리고 식 트리"
 categories:
-  - CSharp
+  - C#
 toc: true
 toc_sticky: true
 toc_label: "On this Page"
-date: 2020-05-02
+date: 2020-05-21
 ---
 
 

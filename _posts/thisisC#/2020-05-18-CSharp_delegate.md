@@ -2,11 +2,11 @@
 layout: single
 title: "[C#] 대리자와 이벤트"
 categories:
-  - CSharp
+  - C#
 toc: true
 toc_sticky: true
 toc_label: "On this Page"
-date: 2020-05-01
+date: 2020-05-18
 ---
 
 
