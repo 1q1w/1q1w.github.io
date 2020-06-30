@@ -75,7 +75,7 @@ HTTP 자체는 보안 상의 문제가 일어날 정도로 복잡한 프로토�
 
 예를 들어 도서검색 사이트에서 'bonobono'를 검색하면 내부적으로 아래의 쿼리가 실행된다고 생각해보자.
 
-```mysql
+```sql
 SELECT * FROM BookTable WHERE author='bonobono' and useFlag = 'Y';
 ```
 
@@ -83,7 +83,7 @@ SELECT * FROM BookTable WHERE author='bonobono' and useFlag = 'Y';
 
 'bonobono'라고 검색했던것을 'bonobono'--'로 변경 후 검색하면 쿼리는 아래와 같다.
 
-```mysql
+```sql
 SELECT * FROM BookTable WHERE author='bonobono'--' and useFlag = 'Y';
 ```
 
