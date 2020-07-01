@@ -1,8 +1,8 @@
 ---
 layout: single
-title: "[HTTP&NETWORK] HTTP와 연계하는 웹 서버"
+title: "[HTTP_NETWORK] HTTP와 연계하는 웹 서버"
 categories:
-  - HTTP&NETWORK
+  - HTTP_NETWORK
 toc: true
 toc_sticky: true
 toc_label: "On this Page"

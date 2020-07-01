@@ -1,8 +1,8 @@
 ---
 layout: single
-title: "[HTTP&NETWORK] HTTP 메시지와 HTTP 상태코드"
+title: "[HTTP_NETWORK] HTTP 메시지와 HTTP 상태코드"
 categories:
-  - HTTP&NETWORK
+  - HTTP_NETWORK
 toc: true
 toc_sticky: true
 toc_label: "On this Page"

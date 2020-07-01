@@ -1,8 +1,8 @@
 ---
 layout: single
-title: "[HTTP&NETWORK] HTTP 헤더(Header)"
+title: "[HTTP_NETWORK] HTTP 헤더(Header)"
 categories:
-  - HTTP&NETWORK
+  - HTTP_NETWORK
 toc: true
 toc_sticky: true
 toc_label: "On this Page"

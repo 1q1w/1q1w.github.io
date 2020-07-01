@@ -1,8 +1,8 @@
 ---
 layout: single
-title: "[HTTP&NETWORK] 웹 공격 기술"
+title: "[HTTP_NETWORK] 웹 공격 기술"
 categories:
-  - HTTP&NETWORK
+  - HTTP_NETWORK
 toc: true
 toc_sticky: true
 toc_label: "On this Page"

@@ -1,8 +1,8 @@
 ---
 layout: single
-title: "[HTTP&NETWORK] 보안문제를 위한 HTTPS"
+title: "[HTTP_NETWORK] 보안문제를 위한 HTTPS"
 categories:
-  - HTTP&NETWORK
+  - HTTP_NETWORK
 toc: true
 toc_sticky: true
 toc_label: "On this Page"

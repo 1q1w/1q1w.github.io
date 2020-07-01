@@ -1,8 +1,8 @@
 ---
 layout: single
-title: "[HTTP&NETWORK] HTTP 인증 방식"
+title: "[HTTP_NETWORK] HTTP 인증 방식"
 categories:
-  - HTTP&NETWORK
+  - HTTP_NETWORK
 toc: true
 toc_sticky: true
 toc_label: "On this Page"

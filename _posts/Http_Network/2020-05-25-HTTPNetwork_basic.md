@@ -1,6 +1,6 @@
 ---
 layout: single
-title: "[HTTP&NETWORK] HTTP와 TCP/IP"
+title: "[HTTP_NETWORK] HTTP와 TCP/IP"
 categories:
   - HTTP_NETWORK
 toc: true

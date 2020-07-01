@@ -1,8 +1,8 @@
 ---
 layout: single
-title: "[HTTP&NETWORK] HTTP기반의 프로토콜"
+title: "[HTTP_NETWORK] HTTP기반의 프로토콜"
 categories:
-  - HTTP&NETWORK
+  - HTTP_NETWORK
 toc: true
 toc_sticky: true
 toc_label: "On this Page"
