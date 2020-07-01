@@ -2,7 +2,7 @@
 layout: single
 title: "[HTTP&NETWORK] HTTP와 TCP/IP"
 categories:
-  - HTTP&NETWORK
+  - HTTP_NETWORK
 toc: true
 toc_sticky: true
 toc_label: "On this Page"
