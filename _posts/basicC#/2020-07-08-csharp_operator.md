@@ -1,8 +1,8 @@
 ---
 layout: single
-title: "[C# 기초] 연산자"
+title: "[C# Basic] 연산자"
 categories:
-  - C# 기초
+  - C# Basic
 toc: true
 toc_sticky: true
 toc_label: "On this Page"

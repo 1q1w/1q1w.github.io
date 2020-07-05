@@ -1,8 +1,8 @@
 ---
 layout: single
-title: "[C# 기초] 데이터 형식"
+title: "[C# Basic] 데이터 형식"
 categories:
-  - C# 기초
+  - C# Basic
 toc: true
 toc_sticky: true
 toc_label: "On this Page"

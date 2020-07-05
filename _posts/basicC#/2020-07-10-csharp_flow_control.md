@@ -1,8 +1,8 @@
 ---
 layout: single
-title: "[C# 기초] 분기처리 및 반복문"
+title: "[C# Basic] 분기처리 및 반복문"
 categories:
-  - C# 기초
+  - C# Basic
 toc: true
 toc_sticky: true
 toc_label: "On this Page"
