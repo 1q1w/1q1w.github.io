@@ -199,7 +199,7 @@ namespace bonobono{
 		}
         
         static void Main(string[] args){
-            int[] array = [4, 6, 8, 2, 3, 5];
+            int[] array = {4, 6, 8, 2, 3, 5};
             
             BubbleSort(array, new Compare(AscendComp));
             for (int i = 0; i < array.Length; i++){
@@ -402,30 +402,41 @@ class MainApp{
 ```c#
 using System;
 
-namespace BonoTest{
-    delegate void BonoHandler(string message);
-    
-    class MyNotifier{
+namespace BonoTest
+{
+    public delegate void BonoHandler(int num);
+
+    public class MyNotifire
+    {
         public event BonoHandler SomethingHappened;
-        public void DoSomething(int a){
-            int temp = number % 10;
+        public void DoSomething(int a)
+        {
+            int temp = a % 10;
 
             // 10으로 나눈 나머지가 0이 아니고, 3의 배수이면 이벤트 호출
-            if (temp != 0 && temp % 3 == 0){
+            if (temp != 0 && temp % 3 == 0)
+            {
                 SomethingHappened(a);
             }
         }
     }
-    class MainApp{
-        static public void MyHandler(string message){
-            Console.WriteLine(Message);
-        }
-        
-        MyNotifire notifire = new MyNotifire();
-        notifire.SomethingHappened += new BonoHandler(MyHandler);
 
-        for (int i = 1; i < 30; i++){
-            notifire.DoSomething(i);  // 3 6 9 12 ... 출력
+    class MainApp
+    {
+        static public void MyHandler(int num)
+        {
+            Console.WriteLine(num);
+        }
+
+        static void Main()
+        {
+            MyNotifire notifire = new MyNotifire();
+            notifire.SomethingHappened += new BonoHandler(MyHandler);
+
+            for (int i = 1; i < 30; i++)
+            {
+                notifire.DoSomething(i);  // 3 6 9 12 ... 출력
+            }
         }
     }
 }
